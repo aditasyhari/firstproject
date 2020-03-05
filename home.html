@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html id="home">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Adit Asyhari | Portfolio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="shortcut icon" href="img/avatar.jpg">
+    <!-- import file css -->
+    <link rel='stylesheet' type='text/css' href='css/bootstrap.min.css'>
+    <link rel='stylesheet' type='text/css' href='library/fontawesome/css/all.min.css'>
+    <link rel='stylesheet' type='text/css' href='library/swiper/package/css/swiper.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/animasi.css'>
+    <link rel='stylesheet' type='text/css' href='css/aos.css'>
+    <link rel='stylesheet' type='text/css' href='css/style.css'>
+</head>
+<body>
+    <!-- Navigasi -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+        <div class="container">
+            <img src="img/avatar.jpg" alt="avatar" class="avatar rounded-circle img-fluid">
+            <a class="navbar-brand" href="#">Adit Asyhari</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto mr-5">
+                    <a class="nav-item nav-link" href="#home">Home</a>
+                    <a class="nav-item nav-link" href="#about">About</a>
+                    <a class="nav-item nav-link" href="#gallery">Gallery</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        $(function () {
+        $(document).scroll(function () {
+            var $nav = $(".fixed-top");
+            $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+    <!-- Batas Navigasi -->
+    
+    <!-- Cover -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7">
+                    <h1 class="display-4">Programmer</h1>
+                    <!-- <hr class="hr" align="left"> -->
+                    <p class="lead">"Most good progammers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program."</p>
+                    <p class="linus">Linus Torvalds</p>
+                </div>
+                <div class="col-sm-5">
+                    <img src="img/pict2.jpg" alt="profile" class="profile mx-auto d-block img-fluid animated bounce">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Batas Cover -->
+
+    <!-- About -->
+    <div class="bgAbout" id="about">
+        <div class="container bgAbout2">
+            <div class="row">
+                <div class="col-sm">
+                    <h3 class="about">About</h3>
+                    <hr class="hrMenu" align="right">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="align-items-stretch justify-content-start card-deck">
+                        <!-- card 1 -->
+                        <div class="card" data-aos="fade-up">
+                            <div class="face face1">
+                                <div class="content">
+                                    <img src="img/profile.svg" class="card-img-top mx-auto d-block img-fluid">
+                                    <h3 class="text-center mt-2">Profile</h3>
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <div class="card-body">
+                                    <div class="content">
+                                        <p class="card-text">Hello, my name is <b>ADITYA ROMAN ASYHARI</b>. At this time i was educated in <b>BANYUWANGI STATE POLYTECHNIC</b>. As an Informatics student, becoming a <b>FULL STACK DEVELOPER</b> and building a <b>STARTUP</b> is my dream.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card 2 -->
+                        <div class="card" data-aos="fade-down">
+                            <div class="face face1">
+                                <div class="content">
+                                    <img src="img/skills.svg" class="card-img-top mx-auto d-block img-fluid">
+                                    <h3 class="text-center mt-2">Skills</h3>
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <div class="card-body">
+                                    <div class="content">
+                                        <ul class="container">
+                                            <li class="html-css">HTML CSS</li>
+                                            <li class="java-php">JAVA PHP</li>
+                                            <li class="js-kotlin">JAVASCRIPT KOTLIN</li>
+                                            <li class="mysql">MYSQL</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card 3 -->
+                        <div class="card" data-aos="fade-up">
+                            <div class="face face1">
+                                <div class="content">
+                                    <img src="img/experience.svg" class="card-img-top mx-auto d-block img-fluid">
+                                    <h3 class="text-center mt-2">Experience</h3>
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <div class="card-body">
+                                    <div class="content">
+                                        <h5 class="card-title">Nganggur</h5>
+                                        <h1 class="card-text text-center"><i class="fas fa-sad-tear"></i></h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="w-100"></div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script>
+        const progress = document.querySelector('.progress-done');
+        const progress2 = document.querySelector('.progress-done2');
+        const progress3 = document.querySelector('.progress-done3');
+        progress.style.width = progress.getAttribute('data-done') + '%';
+        progress.style.opacity = 1;
+        progress2.style.width = progress2.getAttribute('data-done') + '%';
+        progress2.style.opacity = 1;
+        progress3.style.width = progress3.getAttribute('data-done') + '%';
+        progress3.style.opacity = 1;
+    </script> -->
+    <!-- Batas About -->
+
+    <!-- Gallery -->
+    <div class="bgGallery" id="gallery">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <h3 class="gallery">Gallery</h3>
+                    <hr class="hrGallery">
+                </div>
+            </div>
+            <div class="row pt-5 pb-5" style="height: 550px;">
+               <div class="col-sm-4">
+                    <p class="textArrow mt-5">Swipe for<br> more Pictures</p>
+                    <img src="img/panah2.png" class="imgArrow mx-auto d-block img-fluid">
+                </div>
+                <div class="col-sm-8 mb-5">
+                    <!-- Swiper -->
+                    <div class="swiper-container" data-aos="zoom-in">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="imgBox">
+                                    <img src="img/pict1.jpg">
+                                </div>
+                                <div class="contentBox">
+                                    <h2>Rumah Kurcaci</h2>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="imgBox">
+                                    <img src="img/pict3.jpg">
+                                </div>
+                                <div class="contentBox">
+                                    <h2>Paltuding</h2>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="imgBox">
+                                    <img src="img/pict4.jpg">
+                                </div>
+                                <div class="contentBox">
+                                    <h2>Pulau Merah</h2>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="imgBox">
+                                    <img src="img/pict5.jpg">
+                                </div>
+                                <div class="contentBox">
+                                    <h2>Kawah Ijen</h2>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="imgBox">
+                                    <img src="img/pict7.jpg">
+                                </div>
+                                <div class="contentBox">
+                                    <h2>TN. Baluran</h2>
+                                </div>
+                            </div>
+                        </div> 
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div> 
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                effect: 'cube',
+                grabCursor: true,
+                cubeEffect: {
+                shadow: true,
+                slideShadows: true,
+                shadowOffset: 20,
+                shadowScale: 0.94,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                }
+            });
+        </script>
+    </div>
+    <!-- Batas Gallery -->
+
+    <!-- Footer -->
+    <footer class="py-4 text-white-50">
+        <div class="container">
+            <div class="row" style="height: 250px;">
+                <div class="col-sm footer">
+                    <h1>Thank You <i class="fas fa-smile"></i></h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="text-center">
+                        <small>Copyright &copy; Adit Asyhari</small>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </footer>
+    <!-- Batas Footer -->
+
+    <!-- contact icon -->
+    <div class="contact">
+        <div class="togel">
+            <i class="fas fa-phone"></i>
+        </div>
+
+        <ul>
+            <li><a href="https://api.whatsapp.com/send?phone=6287869415384&text=Hey%20Adit"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.facebook.com/adit.kerenbeken1"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+            <li><a href="mailto:aditkorostar123@gmail.com"><i class="fab fa-google-plus" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.instagram.com/dit.adit16/"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $('.togel').click(function() {
+                $('.fa-phone').toggleClass('active');
+                $('ul').toggleClass('active');
+            })
+        })
+    </script>
+    <!-- Batas contact -->
+
+    <!-- Scroll Animation -->
+    <script type='text/javascript' src='js/aos.js'></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+        });
+    </script>
+    <!-- Batas Scroll Animation -->
+
+    <!-- import file js -->
+    <script type='text/javascript' src='js/jquery.js'></script>
+    <script type='text/javascript' src='js/bootstrap.min.js'></script>
+    <script type='text/javascript' src='library/fontawesome/js/all.min.js'></script>
+    <script type='text/javascript' src='library/swiper/package/js/swiper.min.js'></script>
+
+</body>
+</html>
